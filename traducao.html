@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+<title>
+    Tradutor
+</title>
+</head>
+
+<body>
+        <h1>Insira a palavra desejada para a tradução:</h1>
+        <input id="palavra" type="text" placeholder="Digite aqui...">
+        <button onclick="ab()">Traduzir</button></br>
+
+    <script>
+        function ab(){
+        var palavra = document.querySelector('#palavra');
+
+        switch (palavra.value) {
+        case "carro": 
+        console.log("Car");
+        break;
+
+        case "comida":
+        console.log("Food");
+        break;
+
+        case "água":
+        console.log("Water");
+        break;
+
+        default:
+        console.log("não pertence as palavras do banco de dados do site.");
+        break;
+        }
+        }
+
+
+
+
+
+
+    </script>
+    
+    
+
+</body>
